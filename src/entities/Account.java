@@ -36,14 +36,10 @@ public class Account {
         return balance;
     }
 
-    public void setBalance(Double balance) {
-        this.balance = balance;
+    public void withdraw (double amount) {
+        balance -= amount + 5.0;
     }
-
-    public void withdraw (Double amount) {
-        balance -= amount;
-    }
-    public void deposit (Double amount) {
+    public void deposit (double amount) {
         balance += amount;
     }
 }
